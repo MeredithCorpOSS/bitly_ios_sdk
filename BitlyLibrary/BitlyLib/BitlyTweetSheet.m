@@ -90,7 +90,9 @@
         nibName = @"BitlyTweetSheet_iPhone";
     }
     
-    return [super initWithNibName:nibName bundle:nil];
+    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"BitlyResources" ofType:@"bundle"];
+    
+    return [super initWithNibName:nibName bundle:[NSBundle bundleWithPath:bundlePath]];
 }
 
 

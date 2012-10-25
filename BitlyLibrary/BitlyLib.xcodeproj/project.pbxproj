@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		400E1D9C1639950C00324C41 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 400E1D9B1639950C00324C41 /* CoreFoundation.framework */; };
+		400E1DA21639950C00324C41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 400E1DA01639950C00324C41 /* InfoPlist.strings */; };
+		400E1DA81639951A00324C41 /* BitlyTweetSheet_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B19CCF1614747C6500EDB90F /* BitlyTweetSheet_iPad.xib */; };
+		400E1DA91639951A00324C41 /* BitlyTweetSheet_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B19CCF1714747C6500EDB90F /* BitlyTweetSheet_iPhone.xib */; };
+		400E1DAA1639951D00324C41 /* blue-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B19CCF1914747C6500EDB90F /* blue-button.png */; };
+		400E1DAB1639951D00324C41 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = B19CCF1A14747C6500EDB90F /* gear.png */; };
 		B15CACA913F5A229006D7EE7 /* BitlyConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B15CACA713F59D99006D7EE7 /* BitlyConfig.m */; };
 		B176FA9613F2E1E700F900C2 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B149AC0F13B28FDA00E58291 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B176FA9713F2E1E700F900C2 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B149ABFD13B24D9200E58291 /* Twitter.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -65,6 +71,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		400E1D9A1639950C00324C41 /* BitlyResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitlyResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		400E1D9B1639950C00324C41 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		400E1D9F1639950C00324C41 /* BitlyResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BitlyResources-Info.plist"; sourceTree = "<group>"; };
+		400E1DA11639950C00324C41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		400E1DA31639950C00324C41 /* BitlyResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BitlyResources-Prefix.pch"; sourceTree = "<group>"; };
 		B10DAC0213C38DDC00B9A155 /* BitlyTweetSheetAccountSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitlyTweetSheetAccountSelector.h; sourceTree = "<group>"; };
 		B10DAC0313C38DDC00B9A155 /* BitlyTweetSheetAccountSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitlyTweetSheetAccountSelector.m; sourceTree = "<group>"; };
 		B149032613E9CEFE009DE846 /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
@@ -153,6 +164,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		400E1D971639950C00324C41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				400E1D9C1639950C00324C41 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B1A11BAA13F1B86A00F8A7E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -167,6 +186,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		400E1D9D1639950C00324C41 /* BitlyResources */ = {
+			isa = PBXGroup;
+			children = (
+				400E1D9E1639950C00324C41 /* Supporting Files */,
+			);
+			path = BitlyResources;
+			sourceTree = "<group>";
+		};
+		400E1D9E1639950C00324C41 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				400E1D9F1639950C00324C41 /* BitlyResources-Info.plist */,
+				400E1DA01639950C00324C41 /* InfoPlist.strings */,
+				400E1DA31639950C00324C41 /* BitlyResources-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		B149032413E9CEFE009DE846 /* OAuthConsumer */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +253,7 @@
 				B1DFCBE51471B34A003FAED2 /* TouchJSON */,
 				B149032413E9CEFE009DE846 /* OAuthConsumer */,
 				B149ABDE13B24BC700E58291 /* BitlyLib */,
+				400E1D9D1639950C00324C41 /* BitlyResources */,
 				B149ABD713B24BC700E58291 /* Frameworks */,
 				B149ABD513B24BC700E58291 /* Products */,
 			);
@@ -225,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				B1A11BAD13F1B86A00F8A7E5 /* libBitly.a */,
+				400E1D9A1639950C00324C41 /* BitlyResources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -239,6 +278,7 @@
 				B149ABD813B24BC700E58291 /* UIKit.framework */,
 				B149ABDA13B24BC700E58291 /* Foundation.framework */,
 				B149ABDC13B24BC700E58291 /* CoreGraphics.framework */,
+				400E1D9B1639950C00324C41 /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -402,6 +442,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		400E1D991639950C00324C41 /* BitlyResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 400E1DA61639950C00324C41 /* Build configuration list for PBXNativeTarget "BitlyResources" */;
+			buildPhases = (
+				400E1D961639950C00324C41 /* Sources */,
+				400E1D971639950C00324C41 /* Frameworks */,
+				400E1D981639950C00324C41 /* Resources */,
+				400E1DC31639965800324C41 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BitlyResources;
+			productName = BitlyResources;
+			productReference = 400E1D9A1639950C00324C41 /* BitlyResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		B1A11BAC13F1B86A00F8A7E5 /* Bitly */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1A11BB513F1B86A00F8A7E5 /* Build configuration list for PBXNativeTarget "Bitly" */;
@@ -443,11 +501,40 @@
 			projectRoot = "";
 			targets = (
 				B1A11BAC13F1B86A00F8A7E5 /* Bitly */,
+				400E1D991639950C00324C41 /* BitlyResources */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		400E1D981639950C00324C41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				400E1DA21639950C00324C41 /* InfoPlist.strings in Resources */,
+				400E1DA81639951A00324C41 /* BitlyTweetSheet_iPad.xib in Resources */,
+				400E1DA91639951A00324C41 /* BitlyTweetSheet_iPhone.xib in Resources */,
+				400E1DAA1639951D00324C41 /* blue-button.png in Resources */,
+				400E1DAB1639951D00324C41 /* gear.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXShellScriptBuildPhase section */
+		400E1DC31639965800324C41 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bin=${SRCROOT}/bin;\nmkdir -p $bin;\n\nbundle=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.${WRAPPER_EXTENSION}\";\ncp -R $bundle \"$bin/\";";
+		};
 		B15CAC9513F462BB006D7EE7 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -464,6 +551,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		400E1D961639950C00324C41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B1A11BA913F1B86A00F8A7E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -507,7 +601,71 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		400E1DA01639950C00324C41 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				400E1DA11639950C00324C41 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		400E1DA41639950C00324C41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BitlyResources/BitlyResources-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "BitlyResources/BitlyResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACH_O_TYPE = mh_bundle;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		400E1DA51639950C00324C41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BitlyResources/BitlyResources-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "BitlyResources/BitlyResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACH_O_TYPE = mh_bundle;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		B149ABF413B24BC700E58291 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -597,6 +755,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		400E1DA61639950C00324C41 /* Build configuration list for PBXNativeTarget "BitlyResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				400E1DA41639950C00324C41 /* Debug */,
+				400E1DA51639950C00324C41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B149ABCE13B24BC700E58291 /* Build configuration list for PBXProject "BitlyLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
